@@ -93,7 +93,11 @@ const RegisterForm = ({ setIsLoggedIn }) => {
           navigate('/books');
         })
         .catch((err) => {
-          setErrors({ serverError: err.response.data});
+          if (err.response && err.response.data) {
+            setErrors({ serverError: err.response.data });
+          } else {
+            setErrors({ serverError: 'An error occurred' });
+          }
         });
     }
   };
