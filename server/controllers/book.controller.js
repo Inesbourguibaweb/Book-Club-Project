@@ -65,7 +65,7 @@ module.exports.updateOneBookLike = (req, res) => {
 // to remove a like 
 module.exports.updateOneBookUnlike = (req, res) => {
     const bookId = req.params.id;
-    const userFirstName = req.Token.firstName; // Assuming you have a middleware that verifies and extracts the user's first name from the request
+    const userFirstName = req.Token.firstName;
   
     // Find the book by ID
     Book.findById(bookId)
