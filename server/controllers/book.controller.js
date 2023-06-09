@@ -77,7 +77,7 @@ module.exports.updateOneBookUnlike = (req, res) => {
         // Remove the user from the book's likedBy array
         const updatedLikedBy = book.likedBy.filter((user) => user !== userFirstName);
         book.likedBy = updatedLikedBy;
-  
+
         // Save the updated book
         return book.save();
       })

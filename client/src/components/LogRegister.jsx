@@ -16,12 +16,7 @@ const LogRegister = (props) => {
 
   return (
     <div className='container'>
-        <div className="navbar navbar-expand-lg bg-primary-subtle rounded-3 justify-content-center">
-        <h1 className="text-center">
-          Welcome to Book club!
-        </h1>
-      </div>
-      <div className='row column-gap-3' style={{margin: "10px"}} >
+      <div className='row column-gap-3' style={{margin: "50px"}} >
           <RegisterForm isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
           <LoginForm  isLoggedIn={isLoggedIn} setIsloggedIn={setIsloggedIn} />
       </div>
