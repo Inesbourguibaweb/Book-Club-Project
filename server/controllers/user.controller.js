@@ -4,8 +4,6 @@ const secret = process.env.SECRET_KEY;
 const bcrypt = require('bcrypt')
 
 
-//Read AllUsers
-
 // Register a new User 
 
 module.exports = {
