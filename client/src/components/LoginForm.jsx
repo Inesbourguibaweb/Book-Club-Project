@@ -133,7 +133,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
                         <p className="text-danger">{errors.server}</p>
                       )}
                       <div className="pt-1 mb-4">
-                        <button className="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                        <button className="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                       </div>
                       <p className="mb-5 pb-lg-2" style={{color: "#393f81"}}>Don't have an account?
                       <Link style={{color: "#393f81"}} to={"/register"}>
